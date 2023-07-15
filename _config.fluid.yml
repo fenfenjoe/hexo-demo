@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 粉粉蕉的个人博客
+title: 粉粉蕉的网络日志
 subtitle: ''
 description: ''
 keywords:
@@ -103,3 +103,55 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+
+
+
+
+# 以下为fluid的配置
+# 默认配置可见：node_modules\hexo-theme-fluid\_config.yml
+
+#---------------------------
+# 导航栏
+# navbar
+#---------------------------
+navbar:
+  # 博客标题
+  blog_title: 粉粉蕉的网络日志
+  # 导航栏
+  menu:
+    - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+#    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+#    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+#    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+#    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    - {
+      key: '目录',
+      icon: 'iconfont icon-books',
+      submenu: [
+        { key: '量化', link: '/categories/quantication' },
+        { key: 'Java', link: '/categories/java' }
+      ]
+    }
+
+# 二级站点路径
+root: /hexo-demo/
+
+
+
+
+
+#---------------------------
+# 首页
+# Home Page
+#---------------------------
+index:
+  # 首页顶部大图
+  # banner_img: /img/background.jpeg   # 对应存放在 /source/img/background.jpeg
+  # banner_img: https://static.zkqiang.cn/example.jpg # 也可以使用外链
+  # 页面大图高度 0~100 默认100
+  banner_img_height: 100
+  slogan:
+    enable: true
+    # 为空则按 hexo config.subtitle 显示
+    text: "天天向上"
